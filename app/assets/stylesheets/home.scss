@@ -1,21 +1,58 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+// media queries
+// @media (min-width: 300px) {
+/*larger than phablet*/
 
+// @media (min-width:550px) {
+/*larger than tablet*/
+
+// @media (min-width: 750px) {
+/*larger than desktop*/
+
+// @media (min-width: 1000px) {
+/*larger than desktop HD*/
+
+// @media (min-width:1200px) {
 h2 span {
 font-family: cursive;
 text-align:center;
 padding-top: 100px;
 color: black;
 font-size: 55px;
-
 }
+
 h2 {
   text-align: center;
 }
 .bottle {
   width: 40px;
-  height: 40px;
+  height: 36px;
+}
+.lunch {
+  width: 40px;
+  height: 36px;
+}
+.sombrero {
+  width: 40px;
+  height: 36px;
+}
+.cactus {
+  width: 40px;
+  height:36;
+}
+.reservations{
+  width: 40px;
+  height:36px;
+}
+.contact {
+  width: 30px;
+  height: 36px;
+}
+.map {
+  width: 40px;
+  height: 36px;
 }
 #casa{
   position: relative;
@@ -33,7 +70,6 @@ margin: 0 auto;
 #icon{
   width: 100px;
   position: relative;
-  // top: 20px;
 }
 .sidebar-out {
 position: fixed;
