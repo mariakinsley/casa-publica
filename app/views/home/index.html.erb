@@ -47,7 +47,7 @@
                        <a href="#">
                         <%=image_tag("sombrero.png",:class =>"sombrero")%>
                            <span class="nav-text">
-                               DINNER
+                               <%= link_to "DINNER", '/dinner'%>
                            </span>
                        </a>
 
@@ -56,16 +56,16 @@
                        <a href="#">
                           <%=image_tag("lunch.png",:class =>"lunch")%>
                            <span class="nav-text">
-                              LUNCH
+                            <%= link_to "LUNCH", '/lunch'%>
                            </span>
                        </a>
 
                    </li>
                    <li class="has-subnav">
                        <a href="#">
-                          <%=image_tag("cactus.png",:class =>"cactus")%>
+                          <%=image_tag("brunch.png",:class =>"brunch")%>
                            <span class="nav-text">
-                               BRUNCH
+                                <%= link_to "BRUNCH", '/brunch'%>
                            </span>
                        </a>
 
@@ -74,7 +74,8 @@
                        <a href="#">
                           <%=image_tag("bottle.png",:class =>"bottle")%>
                            <span class="nav-text">
-                               DRINKS
+                               <%= link_to "DRINKS", '/drinks'%>
+
                            </span>
                        </a>
 
@@ -84,7 +85,8 @@
                        <a href="#">
                           <%=image_tag("reservations.png",:class =>"reservations")%>
                            <span class="nav-text">
-                              RESERVATIONS
+                             <%= link_to "RESERVATIONS", '/reservations'%>
+
                            </span>
                        </a>
                    </li>
@@ -92,16 +94,17 @@
                        <a href="#">
                            <%=image_tag("contact.png",:class =>"contact")%>
                            <span class="nav-text">
-                              CONTACT US
+                             <%= link_to "CONTACT", '/contact'%>
+
                            </span>
                        </a>
                    </li>
 
                    <li>
                       <a href="#">
-                          <%=image_tag("map.jpg",:class =>"map")%>
+                          <%=image_tag("map.png",:class =>"map")%>
                            <span class="nav-text">
-                               MAP
+                            <%= link_to "MAP", '/map'%>
                            </span>
                        </a>
                    </li>

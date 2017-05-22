@@ -20,7 +20,7 @@ font-family: cursive;
 text-align:center;
 padding-top: 100px;
 color: black;
-font-size: 55px;
+font-size: 60px;
 }
 
 h2 {
@@ -38,7 +38,7 @@ h2 {
   width: 40px;
   height: 36px;
 }
-.cactus {
+.brunch {
   width: 40px;
   height:36;
 }
@@ -47,20 +47,21 @@ h2 {
   height:36px;
 }
 .contact {
-  width: 30px;
+  width: 40px;
   height: 36px;
 }
 .map {
   width: 40px;
   height: 36px;
+
 }
 #casa{
   position: relative;
-
+color: black;
 }
 #publica {
   position: relative;
-
+color: black;
 }
 .item {
 width: 700px;
@@ -81,9 +82,12 @@ border-style: 1px solid;
 color: rgba(0, 0, 0, 0.00);
 }
 
-a.right.carousel-control {
-    background: none;
-}
+// a.right.carousel-control {
+//     background: none;
+// }
+// a.left.carousel-control {
+//   background: none;
+// }
 .sidebar ul li a {
 text-decoration: none;
 }
@@ -105,25 +109,27 @@ font-size:20px;
 }
 
 
-.main-menu:hover,nav.main-menu.expanded {
-width:250px;
-overflow:visible;
-}
+// .main-menu:hover,nav.main-menu.expanded {
+// width:250px;
+// overflow:visible;
+// }
 
 .main-menu {
-background:#fbfbfb;
-border-right:1px solid #e5e5e5;
+background:#fbfbef;
+border-right:1px solid #898900;
 position:absolute;
 top:0;
 bottom:0;
 height:100%;
 left:0;
-width:60px;
-overflow:hidden;
+// width:60px;
+// overflow:hidden;
 -webkit-transition:width .05s linear;
 transition:width .05s linear;
 -webkit-transform:translateZ(0) scale(1,1);
 z-index:1000;
+width:220px;
+overflow:visible;
 }
 
 .main-menu>ul {
@@ -216,4 +222,9 @@ height: 100%;
   font-style: normal;
   font-weight: 300;
   src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+}
+h1{
+  font-size: 60px;
+  font-family: cursive;
+  text-align: center;
 }
