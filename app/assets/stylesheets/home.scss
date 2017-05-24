@@ -2,229 +2,1011 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 // media queries
-// @media (min-width: 300px) {
-/*larger than phablet*/
+// media queries
+@media (min-width: 300px) {
+    .restaurant {
+        text-align: center;
+        float: none;
+        margin: 0 auto 30px;
+        width: 90%;
+    }
 
-// @media (min-width:550px) {
-/*larger than tablet*/
+    h2 span {
+        font-family: cursive;
+        text-align: center;
+        padding-top: 100px;
+        color: black;
+        font-size: 60px;
+    }
 
-// @media (min-width: 750px) {
-/*larger than desktop*/
+    h2 {
+        text-align: center;
+    }
 
-// @media (min-width: 1000px) {
-/*larger than desktop HD*/
+    .bottle {
+        width: 40px;
+        height: 36px;
+    }
 
-// @media (min-width:1200px) {
-h2 span {
-font-family: cursive;
-text-align:center;
-padding-top: 100px;
-color: black;
-font-size: 60px;
+    .lunch {
+        width: 40px;
+        height: 36px;
+    }
+
+    .sombrero {
+        width: 40px;
+        height: 36px;
+    }
+
+    .brunch {
+        width: 40px;
+        height: 36;
+    }
+
+    .reservations {
+        width: 40px;
+        height: 36px;
+    }
+
+    .contact {
+        width: 40px;
+        height: 36px;
+    }
+
+    .map {
+        width: 40px;
+        height: 36px;
+    }
+
+    #casa {
+        position: relative;
+        color: black;
+    }
+
+    #publica {
+        position: relative;
+        color: black;
+    }
+
+    .item {
+        width: 700px;
+        height: 500px;
+        margin: 0 auto;
+    }
+
+    #icon {
+        width: 100px;
+        position: relative;
+    }
+
+    .sidebar-out {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        border-style: 1px solid;
+    }
+
+    .sidebar a:hover {
+        color: rgba(0, 0, 0, 0.00);
+    }
+    // a.right.carousel-control {
+    //     background: none;
+    // }
+    // a.left.carousel-control {
+    //   background: none;
+    // }
+    .sidebar ul li a {
+        text-decoration: none;
+    }
+    @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+    @import url(http://fonts.googleapis.com/css?family=Titillium+Web:300);
+
+    .fa-2x {
+        font-size: 2em;
+    }
+
+    .fa {
+        position: relative;
+        display: table-cell;
+        width: 60px;
+        height: 36px;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 20px;
+    }
+    // .main-menu:hover,nav.main-menu.expanded {
+    // width:250px;
+    // overflow:visible;
+    // }
+    .main-menu {
+        background: #fbfbef;
+        border-right: 1px solid #898900;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        left: 0; // width:60px;
+        // overflow:hidden;
+        -webkit-transition: width 0.05s linear;
+        transition: width 0.05s linear;
+        -webkit-transform: translateZ(0) scale(1,1);
+        z-index: 1000;
+        width: 220px;
+        overflow: visible;
+    }
+
+    .main-menu > ul {
+        margin: 7px 0;
+    }
+
+    .main-menu li {
+        position: relative;
+        display: block;
+        width: 250px;
+    }
+
+    .main-menu li > a {
+        position: relative;
+        display: table;
+        border-collapse: collapse;
+        border-spacing: 0;
+        color: #999;
+        font-family: arial;
+        font-size: 14px;
+        text-decoration: none;
+        -webkit-transform: translateZ(0) scale(1,1);
+        -webkit-transition: all 0.1s linear;
+        transition: all 0.1s linear;
+    }
+
+    .main-menu .nav-icon {
+        position: relative;
+        display: table-cell;
+        width: 60px;
+        height: 36px;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 18px;
+    }
+
+    .main-menu .nav-text {
+        position: relative;
+        display: table-cell;
+        vertical-align: middle;
+        width: 190px;
+        font-family: 'Titillium Web', sans-serif;
+    }
+
+    .main-menu > ul.logout {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    .no-touch .scrollable.hover {
+        overflow-y: hidden;
+    }
+
+    .no-touch .scrollable.hover:hover {
+        overflow-y: auto;
+        overflow: visible;
+    }
+
+    a:focus,
+    a:hover {
+        text-decoration: none;
+    }
+
+    nav {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+
+    nav li,
+    nav ul {
+        outline: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .dashboard-page nav.dashboard-menu ul li.active a,
+    .dropdown-menu > .active > a,
+    .dropdown-menu > .active > a:focus,
+    .dropdown-menu > .active > a:hover,
+    .dropdown-menu > li > a:focus,
+    .dropdown-menu > li > a:hover,
+    .main-menu li:hover > a,
+    .no-touch .dashboard-page nav.dashboard-menu ul li:hover a,
+    nav.main-menu li.active > a {
+        color: #342399;
+        background-color: #787652;
+    }
+
+    .area {
+        float: left;
+        background: #e2e2e2;
+        width: 100%;
+        height: 100%;
+    }
+    @font-face {
+        font-family: 'Titillium Web';
+        font-style: normal;
+        font-weight: 300;
+        src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url("http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff") format('woff');
+    }
+
+    h1 {
+        font-size: 60px;
+        font-family: cursive;
+        text-align: center;
+    }
+
+    .center {
+      width: 500px;
+      height: 500px;
+      margin: 10px;
+      display:inline-block;
+    border: 2px solid black;
+  }
+  .main-map  {
+    width: 500px;
+    height: 500px;
+    margin: 10px;
+    display:inline-block;
+  border: 2px solid black;
 }
 
-h2 {
-  text-align: center;
-}
-.bottle {
-  width: 40px;
-  height: 36px;
-}
-.lunch {
-  width: 40px;
-  height: 36px;
-}
-.sombrero {
-  width: 40px;
-  height: 36px;
-}
-.brunch {
-  width: 40px;
-  height:36;
-}
-.reservations{
-  width: 40px;
-  height:36px;
-}
-.contact {
-  width: 40px;
-  height: 36px;
-}
-.map {
-  width: 40px;
-  height: 36px;
-
-}
-#casa{
-  position: relative;
-color: black;
-}
-#publica {
-  position: relative;
-color: black;
-}
-.item {
-width: 700px;
-height: 500px;
-margin: 0 auto;
-}
-#icon{
-  width: 100px;
-  position: relative;
-}
-.sidebar-out {
-position: fixed;
-top: 0;
-bottom: 0;
-border-style: 1px solid;
-}
-.sidebar a:hover {
-color: rgba(0, 0, 0, 0.00);
+div#map {
+    height: 500px;
+    border: 5px solid red;
 }
 
-// a.right.carousel-control {
-//     background: none;
-// }
-// a.left.carousel-control {
-//   background: none;
-// }
-.sidebar ul li a {
-text-decoration: none;
-}
+    .restaurant {
+        text-align: center;
+        float: none;
+        margin: 0 auto 30px;
+        width: 90%;
+    }
 
-@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+    h2 span {
+        font-family: cursive;
+        text-align: center;
+        padding-top: 100px;
+        color: black;
+        font-size: 60px;
+    }
 
-@import url(http://fonts.googleapis.com/css?family=Titillium+Web:300);
-.fa-2x {
-font-size: 2em;
-}
-.fa {
-position: relative;
-display: table-cell;
-width: 60px;
-height: 36px;
-text-align: center;
-vertical-align: middle;
-font-size:20px;
-}
+    h2 {
+        text-align: center;
+    }
 
+    .bottle {
+        width: 40px;
+        height: 36px;
+    }
 
-// .main-menu:hover,nav.main-menu.expanded {
-// width:250px;
-// overflow:visible;
-// }
+    .lunch {
+        width: 40px;
+        height: 36px;
+    }
 
-.main-menu {
-background:#fbfbef;
-border-right:1px solid #898900;
-position:absolute;
-top:0;
-bottom:0;
-height:100%;
-left:0;
-// width:60px;
-// overflow:hidden;
--webkit-transition:width .05s linear;
-transition:width .05s linear;
--webkit-transform:translateZ(0) scale(1,1);
-z-index:1000;
-width:220px;
-overflow:visible;
-}
+    .sombrero {
+        width: 40px;
+        height: 36px;
+    }
 
-.main-menu>ul {
-margin:7px 0;
-}
+    .brunch {
+        width: 40px;
+        height: 36;
+    }
 
-.main-menu li {
-position:relative;
-display:block;
-width:250px;
-}
+    .reservations {
+        width: 40px;
+        height: 36px;
+    }
 
-.main-menu li>a {
-position:relative;
-display:table;
-border-collapse:collapse;
-border-spacing:0;
-color:#999;
- font-family: arial;
-font-size: 14px;
-text-decoration:none;
--webkit-transform:translateZ(0) scale(1,1);
--webkit-transition:all .1s linear;
-transition:all .1s linear;
+    .contact {
+        width: 40px;
+        height: 36px;
+    }
 
-}
+    .map {
+        width: 40px;
+        height: 36px;
+    }
 
-.main-menu .nav-icon {
-position:relative;
-display:table-cell;
-width:60px;
-height:36px;
-text-align:center;
-vertical-align:middle;
-font-size:18px;
-}
+    #casa {
+        position: relative;
+        color: black;
+    }
 
-.main-menu .nav-text {
-position:relative;
-display:table-cell;
-vertical-align:middle;
-width:190px;
-  font-family: 'Titillium Web', sans-serif;
-}
+    #publica {
+        position: relative;
+        color: black;
+    }
 
-.main-menu>ul.logout {
-position:absolute;
-left:0;
-bottom:0;
-}
+    .item {
+        width: 700px;
+        height: 500px;
+        margin: 0 auto;
+    }
 
-.no-touch .scrollable.hover {
-overflow-y:hidden;
-}
+    #icon {
+        width: 100px;
+        position: relative;
+    }
 
-.no-touch .scrollable.hover:hover {
-overflow-y:auto;
-overflow:visible;
-}
+    .sidebar-out {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        border-style: 1px solid;
+    }
 
-a:hover,a:focus {
-text-decoration:none;
-}
+    .sidebar a:hover {
+        color: rgba(0, 0, 0, 0.00);
+    }
+    // a.right.carousel-control {
+    //     background: none;
+    // }
+    // a.left.carousel-control {
+    //   background: none;
+    // }
+    .sidebar ul li a {
+        text-decoration: none;
+    }
+    @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+    @import url(http://fonts.googleapis.com/css?family=Titillium+Web:300);
 
-nav {
--webkit-user-select:none;
--moz-user-select:none;
--ms-user-select:none;
--o-user-select:none;
-user-select:none;
-}
+    .fa-2x {
+        font-size: 2em;
+    }
 
-nav ul,nav li {
-outline:0;
-margin:0;
-padding:0;
+    .fa {
+        position: relative;
+        display: table-cell;
+        width: 60px;
+        height: 36px;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 20px;
+    }
+    // .main-menu:hover,nav.main-menu.expanded {
+    // width:250px;
+    // overflow:visible;
+    // }
+    .main-menu {
+        background: #fbfbef;
+        border-right: 1px solid #898900;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        left: 0; // width:60px;
+        // overflow:hidden;
+        -webkit-transition: width 0.05s linear;
+        transition: width 0.05s linear;
+        -webkit-transform: translateZ(0) scale(1,1);
+        z-index: 1000;
+        width: 220px;
+        overflow: visible;
+    }
+
+    .main-menu > ul {
+        margin: 7px 0;
+    }
+
+    .main-menu li {
+        position: relative;
+        display: block;
+        width: 250px;
+    }
+
+    .main-menu li > a {
+        position: relative;
+        display: table;
+        border-collapse: collapse;
+        border-spacing: 0;
+        color: #999;
+        font-family: arial;
+        font-size: 14px;
+        text-decoration: none;
+        -webkit-transform: translateZ(0) scale(1,1);
+        -webkit-transition: all 0.1s linear;
+        transition: all 0.1s linear;
+    }
+
+    .main-menu .nav-icon {
+        position: relative;
+        display: table-cell;
+        width: 60px;
+        height: 36px;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 18px;
+    }
+
+    .main-menu .nav-text {
+        position: relative;
+        display: table-cell;
+        vertical-align: middle;
+        width: 190px;
+        font-family: 'Titillium Web', sans-serif;
+    }
+
+    .main-menu > ul.logout {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    .no-touch .scrollable.hover {
+        overflow-y: hidden;
+    }
+
+    .no-touch .scrollable.hover:hover {
+        overflow-y: auto;
+        overflow: visible;
+    }
+
+    a:focus,
+    a:hover {
+        text-decoration: none;
+    }
+
+    nav {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+
+    nav li,
+    nav ul {
+        outline: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .dashboard-page nav.dashboard-menu ul li.active a,
+    .dropdown-menu > .active > a,
+    .dropdown-menu > .active > a:focus,
+    .dropdown-menu > .active > a:hover,
+    .dropdown-menu > li > a:focus,
+    .dropdown-menu > li > a:hover,
+    .main-menu li:hover > a,
+    .no-touch .dashboard-page nav.dashboard-menu ul li:hover a,
+    nav.main-menu li.active > a {
+        color: #342399;
+        background-color: #787652;
+    }
+
+    .area {
+        float: left;
+        background: #e2e2e2;
+        width: 100%;
+        height: 100%;
+    }
+    @font-face {
+        font-family: 'Titillium Web';
+        font-style: normal;
+        font-weight: 300;
+        src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url("http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff") format('woff');
+    }
+
+    h1 {
+        font-size: 60px;
+        font-family: cursive;
+        text-align: center;
+    }
+
+    .center {
+        text-align: center;
+        height: 600px;
+        width: 600px;
+        margin: auto;
+        border: 2px solid black;
+    }
 }
-.main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
-color:#342399;
-background-color:#787652;
+@media (min-width: 550px) {
+    .restaurant {
+        text-align: center;
+        float: none;
+        margin: 0 auto 30px;
+        width: 90%;
+    }
+
+    h2 span {
+        font-family: cursive;
+        text-align: center;
+        padding-top: 100px;
+        color: black;
+        font-size: 60px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .bottle {
+        width: 40px;
+        height: 36px;
+    }
+
+    .lunch {
+        width: 40px;
+        height: 36px;
+    }
+
+    .sombrero {
+        width: 40px;
+        height: 36px;
+    }
+
+    .brunch {
+        width: 40px;
+        height: 36;
+    }
+
+    .reservations {
+        width: 40px;
+        height: 36px;
+    }
+
+    .contact {
+        width: 40px;
+        height: 36px;
+    }
+
+    .map {
+        width: 40px;
+        height: 36px;
+    }
+
+    #casa {
+        position: relative;
+        color: black;
+    }
+
+    #publica {
+        position: relative;
+        color: black;
+    }
+
+    .item {
+        width: 700px;
+        height: 500px;
+        margin: 0 auto;
+    }
+
+    #icon {
+        width: 100px;
+        position: relative;
+    }
+
+    .sidebar-out {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        border-style: 1px solid;
+    }
+
+    .sidebar a:hover {
+        color: rgba(0, 0, 0, 0.00);
+    }
+    // a.right.carousel-control {
+    //     background: none;
+    // }
+    // a.left.carousel-control {
+    //   background: none;
+    // }
+    .sidebar ul li a {
+        text-decoration: none;
+    }
+    @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+    @import url(http://fonts.googleapis.com/css?family=Titillium+Web:300);
+
+    .fa-2x {
+        font-size: 2em;
+    }
+
+    .fa {
+        position: relative;
+        display: table-cell;
+        width: 60px;
+        height: 36px;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 20px;
+    }
+    // .main-menu:hover,nav.main-menu.expanded {
+    // width:250px;
+    // overflow:visible;
+    // }
+    .main-menu {
+        background: #fbfbef;
+        border-right: 1px solid #898900;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        left: 0; // width:60px;
+        // overflow:hidden;
+        -webkit-transition: width 0.05s linear;
+        transition: width 0.05s linear;
+        -webkit-transform: translateZ(0) scale(1,1);
+        z-index: 1000;
+        width: 220px;
+        overflow: visible;
+    }
+
+    .main-menu > ul {
+        margin: 7px 0;
+    }
+
+    .main-menu li {
+        position: relative;
+        display: block;
+        width: 250px;
+    }
+
+    .main-menu li > a {
+        position: relative;
+        display: table;
+        border-collapse: collapse;
+        border-spacing: 0;
+        color: #999;
+        font-family: arial;
+        font-size: 14px;
+        text-decoration: none;
+        -webkit-transform: translateZ(0) scale(1,1);
+        -webkit-transition: all 0.1s linear;
+        transition: all 0.1s linear;
+    }
+
+    .main-menu .nav-icon {
+        position: relative;
+        display: table-cell;
+        width: 60px;
+        height: 36px;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 18px;
+    }
+
+    .main-menu .nav-text {
+        position: relative;
+        display: table-cell;
+        vertical-align: middle;
+        width: 190px;
+        font-family: 'Titillium Web', sans-serif;
+    }
+
+    .main-menu > ul.logout {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    .no-touch .scrollable.hover {
+        overflow-y: hidden;
+    }
+
+    .no-touch .scrollable.hover:hover {
+        overflow-y: auto;
+        overflow: visible;
+    }
+
+    a:focus,
+    a:hover {
+        text-decoration: none;
+    }
+
+    nav {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+
+    nav li,
+    nav ul {
+        outline: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .dashboard-page nav.dashboard-menu ul li.active a,
+    .dropdown-menu > .active > a,
+    .dropdown-menu > .active > a:focus,
+    .dropdown-menu > .active > a:hover,
+    .dropdown-menu > li > a:focus,
+    .dropdown-menu > li > a:hover,
+    .main-menu li:hover > a,
+    .no-touch .dashboard-page nav.dashboard-menu ul li:hover a,
+    nav.main-menu li.active > a {
+        color: #342399;
+        background-color: #787652;
+    }
+
+    .area {
+        float: left;
+        background: #e2e2e2;
+        width: 100%;
+        height: 100%;
+    }
+    @font-face {
+        font-family: 'Titillium Web';
+        font-style: normal;
+        font-weight: 300;
+        src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url("http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff") format('woff');
+    }
+
+    h1 {
+        font-size: 60px;
+        font-family: cursive;
+        text-align: center;
+    }
+
+    .center {
+        text-align: center;
+        height: 600px;
+        width: 600px;
+        margin: auto;
+        border: 2px solid black;
+    }
 }
-.area {
-float: left;
-background: #e2e2e2;
-width: 100%;
-height: 100%;
-}
-@font-face {
-  font-family: 'Titillium Web';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
-}
-h1{
-  font-size: 60px;
-  font-family: cursive;
-  text-align: center;
+@media (min-width: 750px) {
+    .restaurant {
+        text-align: center;
+        float: none;
+        margin: 0 auto 30px;
+        width: 90%;
+    }
+
+    h2 span {
+        font-family: cursive;
+        text-align: center;
+        padding-top: 100px;
+        color: black;
+        font-size: 60px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .bottle {
+        width: 40px;
+        height: 36px;
+    }
+
+    .lunch {
+        width: 40px;
+        height: 36px;
+    }
+
+    .sombrero {
+        width: 40px;
+        height: 36px;
+    }
+
+    .brunch {
+        width: 40px;
+        height: 36;
+    }
+
+    .reservations {
+        width: 40px;
+        height: 36px;
+    }
+
+    .contact {
+        width: 40px;
+        height: 36px;
+    }
+
+    .map {
+        width: 40px;
+        height: 36px;
+    }
+
+    #casa {
+        position: relative;
+        color: black;
+    }
+
+    #publica {
+        position: relative;
+        color: black;
+    }
+
+    .item {
+        width: 700px;
+        height: 500px;
+        margin: 0 auto;
+    }
+
+    #icon {
+        width: 100px;
+        position: relative;
+    }
+
+    .sidebar-out {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        border-style: 1px solid;
+    }
+
+    .sidebar a:hover {
+        color: rgba(0, 0, 0, 0.00);
+    }
+    // a.right.carousel-control {
+    //     background: none;
+    // }
+    // a.left.carousel-control {
+    //   background: none;
+    // }
+    .sidebar ul li a {
+        text-decoration: none;
+    }
+    @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+    @import url(http://fonts.googleapis.com/css?family=Titillium+Web:300);
+
+    .fa-2x {
+        font-size: 2em;
+    }
+
+    .fa {
+        position: relative;
+        display: table-cell;
+        width: 60px;
+        height: 36px;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 20px;
+    }
+    // .main-menu:hover,nav.main-menu.expanded {
+    // width:250px;
+    // overflow:visible;
+    // }
+    .main-menu {
+        background: #fbfbef;
+        border-right: 1px solid #898900;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        left: 0; // width:60px;
+        // overflow:hidden;
+        -webkit-transition: width 0.05s linear;
+        transition: width 0.05s linear;
+        -webkit-transform: translateZ(0) scale(1,1);
+        z-index: 1000;
+        width: 220px;
+        overflow: visible;
+    }
+
+    .main-menu > ul {
+        margin: 7px 0;
+    }
+
+    .main-menu li {
+        position: relative;
+        display: block;
+        width: 250px;
+    }
+
+    .main-menu li > a {
+        position: relative;
+        display: table;
+        border-collapse: collapse;
+        border-spacing: 0;
+        color: #999;
+        font-family: arial;
+        font-size: 14px;
+        text-decoration: none;
+        -webkit-transform: translateZ(0) scale(1,1);
+        -webkit-transition: all 0.1s linear;
+        transition: all 0.1s linear;
+    }
+
+    .main-menu .nav-icon {
+        position: relative;
+        display: table-cell;
+        width: 60px;
+        height: 36px;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 18px;
+    }
+
+    .main-menu .nav-text {
+        position: relative;
+        display: table-cell;
+        vertical-align: middle;
+        width: 190px;
+        font-family: 'Titillium Web', sans-serif;
+    }
+
+    .main-menu > ul.logout {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    .no-touch .scrollable.hover {
+        overflow-y: hidden;
+    }
+
+    .no-touch .scrollable.hover:hover {
+        overflow-y: auto;
+        overflow: visible;
+    }
+
+    a:focus,
+    a:hover {
+        text-decoration: none;
+    }
+
+    nav {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+
+    nav li,
+    nav ul {
+        outline: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .dashboard-page nav.dashboard-menu ul li.active a,
+    .dropdown-menu > .active > a,
+    .dropdown-menu > .active > a:focus,
+    .dropdown-menu > .active > a:hover,
+    .dropdown-menu > li > a:focus,
+    .dropdown-menu > li > a:hover,
+    .main-menu li:hover > a,
+    .no-touch .dashboard-page nav.dashboard-menu ul li:hover a,
+    nav.main-menu li.active > a {
+        color: #342399;
+        background-color: #787652;
+    }
+
+    .area {
+        float: left;
+        background: #e2e2e2;
+        width: 100%;
+        height: 100%;
+    }
+    @font-face {
+        font-family: 'Titillium Web';
+        font-style: normal;
+        font-weight: 300;
+        src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url("http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff") format('woff');
+    }
+
+    h1 {
+        font-size: 60px;
+        font-family: cursive;
+        text-align: center;
+    }
+
+    .center {
+        text-align: center;
+        height: 600px;
+        width: 600px;
+        margin: auto;
+        border: 2px solid black;
+    }
 }

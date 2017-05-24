@@ -8,15 +8,89 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+<div class="area"></div><nav class="main-menu">
+           <ul>
+               <li>
+                   <a href="#">
+                    <%=image_tag("sombrero.png",:class =>"sombrero")%>
+                       <span class="nav-text">
+                           <%= link_to "DINNER", '/dinner'%>
+                       </span>
+                   </a>
+
+               </li>
+               <li class="has-subnav">
+                   <a href="#">
+                      <%=image_tag("lunch.png",:class =>"lunch")%>
+                       <span class="nav-text">
+                        <%= link_to "LUNCH", '/lunch'%>
+                       </span>
+                   </a>
+
+               </li>
+               <li class="has-subnav">
+                   <a href="#">
+                      <%=image_tag("brunch.png",:class =>"brunch")%>
+                       <span class="nav-text">
+                            <%= link_to "BRUNCH", '/brunch'%>
+                       </span>
+                   </a>
+
+               </li>
+               <li class="has-subnav">
+                   <a href="#">
+                      <%=image_tag("bottle.png",:class =>"bottle")%>
+                       <span class="nav-text">
+                           <%= link_to "DRINKS", '/drinks'%>
+
+                       </span>
+                   </a>
+
+               </li>
+               <li>
+                  <li class="has-subnav">
+                   <a href="#">
+                      <%=image_tag("reservations.png",:class =>"reservations")%>
+                       <span class="nav-text">
+                         <%= link_to "RESERVATIONS", '/reservations'%>
+
+                       </span>
+                   </a>
+               </li>
+               <li>
+                   <a href="#">
+                       <%=image_tag("contact.png",:class =>"contact")%>
+                       <span class="nav-text">
+                         <%= link_to "CONTACT", '/contact'%>
+
+                       </span>
+                   </a>
+               </li>
+
+               <li>
+                  <a href="#">
+                      <%=image_tag("map.png",:class =>"map")%>
+                       <span class="nav-text">
+                        <%= link_to "MAP", '/map'%>
+                       </span>
+                   </a>
+               </li>
+
+           </ul>
+
+
+       </nav>
   </head>
-
   <body>
-  
+
+
     <%= yield %>
-
-
-
-
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
+    <script async defer src=https://maps.googleapis.com/maps/api/js?key=<%=ENV['GOOGLEMAPS_API_KEY']%>&callback=initMap
+    type="text/javascript">
+    </script>
+
+
+</div>
   </body>
 </html>

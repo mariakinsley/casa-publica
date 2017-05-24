@@ -1,1 +1,57 @@
 <h1>CONTACT</h1>
+<p>the form will go here and the map </p>
+
+
+
+<div class="center">
+ <p class="contact_us" >Contact Us</p>
+ <form action="/form-response" method ="post">
+   <input class="email-input" type="text" name="from" value="" placeholder="Email:"><br>
+   <input class="email-input" type="text" name="subject" value="" placeholder="Subject">
+   <br>
+   <br>
+   <textarea id="content-input" type="text" name="content" value="" placeholder="Type message here" rows="8" cols="70"></textarea>
+   <br>
+   <br>
+   <input class="form-button" id="submit-button" type="submit">
+
+   <h2 class="learn_hours">HOURS</h1>
+     <p>Monday  CLOSED</p>
+     <p>Tuesday 5pm to 10pm</p>
+     <p>Wednesday 5pm to 10pm</p>
+     <p>Thrusday 5pm to 10pm</p>
+     <p>Friday 5pm to 10pm</p>
+     <p>Saturday 5pm to 11pm</p>
+     <p>Sunday 5pm to 10pm</p>
+ </form>
+ <!-- put the js here is fine -->
+
+
+
+  <!-- < % @location = {
+    lat: @contact.latitude,
+    lng: @contact.longitude,
+    marker: @contact.name,
+    } %>
+  < % @localarray.push(@location) %> -->
+
+
+<%= puts "hello" + @localarray.to_s %>
+<script type="text/javascript">
+  let locationTest = <%=raw @localarray.to_json %>
+</script>
+<div class=test>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key='<%=ENV['GOOGLEMAPS_API_KEY']%>'&callback=initMap"
+type="text/javascript">
+</script>
+</div>
+
+
+<div id="map" class="main-map">
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgtGA719mbaDfH7wbk5xEN3C4y01vxTX8&callback=initMap"
+type="text/javascript">
+</script>
+</div>
+
+
+</div>
