@@ -40,12 +40,6 @@
 <script type="text/javascript">
   let locationTest = <%=raw @localarray.to_json %>
 </script>
-<div class=test>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key='<%=ENV['GOOGLEMAPS_API_KEY']%>'&callback=initMap"
-type="text/javascript">
-</script>
-</div>
-
 
 <div id="map" class="main-map">
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgtGA719mbaDfH7wbk5xEN3C4y01vxTX8&callback=initMap"

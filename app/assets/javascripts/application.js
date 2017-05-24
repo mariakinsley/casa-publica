@@ -19,16 +19,16 @@
 // # All this logic will automatically be available in application.js.
 // # You can use CoffeeScript in this file: http://coffeescript.org/
 function initMap() {
-      var myLatLng = {lat: -40.7128 N, lng: 74.0059 W};
+  var myLatLng = {lat: 40.730610, lng: -73.935242};
 
-      var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 4,
-        center: myLatLng
-      });
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 10,
+    center: myLatLng
+  });
 
-      var marker = new google.maps.Marker({
-        position: myLatLng,
-        map: map,
-        title: 'Hello World!'
-      });
-    }
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Hello World!'
+  });
+}
