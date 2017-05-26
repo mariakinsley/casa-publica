@@ -1,4 +1,6 @@
 class HomeController < ApplicationController
+  
+
   def index
   end
 
@@ -18,7 +20,7 @@ class HomeController < ApplicationController
   end
 
   def contact
-  
+
   end
 
   def map

@@ -2,7 +2,7 @@
 <p>the form will go here and the map </p>
 
 
-
+<center>
 <div class="center">
  <p class="contact_us" >Contact Us</p>
  <form action="/form-response" method ="post">
@@ -25,7 +25,7 @@
      <p>Sunday 5pm to 10pm</p>
  </form>
  <!-- put the js here is fine -->
-
+<!-- </center> -->
 
 
   <!-- < % @location = {
@@ -41,11 +41,15 @@
   let locationTest = <%=raw @localarray.to_json %>
 </script>
 
+</div>
+</center>
 <div id="map" class="main-map">
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgtGA719mbaDfH7wbk5xEN3C4y01vxTX8&callback=initMap"
+
+<script async defer src=https://maps.googleapis.com/maps/api/js?key=<%=ENV['GOOGLEMAPS_API_KEY']%>&callback=initMap
 type="text/javascript">
 </script>
-</div>
 
 
+
 </div>
+</center>

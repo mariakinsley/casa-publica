@@ -11,6 +11,86 @@
         width: 90%;
     }
 
+.parallax {
+    background-image: url("imgages_drink.jpg");
+    /* Set a specific height */
+    min-height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+  .drink {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+ left: 0px;
+ top: 0px;
+ z-index: -1;
+
+}
+
+
+
+// ==================================================================
+.parallax {
+    background-image: url("imgages_din.jpg");
+    /* Set a specific height */
+    min-height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.din {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+ left: 0px;
+ top: 0px;
+ z-index: -1;
+}
+.parallax {
+    background-image: url("imgages_brunc.jpg");
+    /* Set a specific height */
+    min-height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.brunc {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+ left: 0px;
+ top: 0px;
+ z-index: -1;
+}
+.parallax {
+    background-image: url("imgages_lunc.jpg");
+    /* Set a specific height */
+    min-height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.lunc {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+ left: 0px;
+ top: 0px;
+ z-index: -1;
+
+}
+
     h2 span {
         font-family: cursive;
         text-align: center;
@@ -121,7 +201,7 @@
     .main-menu {
         background: #fbfbef;
         border-right: 1px solid #898900;
-        position: absolute;
+        position: fixed;
         top: 0;
         bottom: 0;
         height: 100%;
@@ -143,6 +223,7 @@
         position: relative;
         display: block;
         width: 250px;
+
     }
 
     .main-menu li > a {
@@ -242,6 +323,7 @@
         font-size: 60px;
         font-family: cursive;
         text-align: center;
+
     }
 
     .center {
@@ -250,18 +332,16 @@
       margin: 10px;
       display:inline-block;
     border: 2px solid black;
+    // padding-left: 200px;
+    margin-left: 100px;
   }
-  .main-map  {
+  .main-map, #map {
     width: 500px;
     height: 500px;
     margin: 10px;
     display:inline-block;
   border: 2px solid black;
-}
-
-div#map {
-    height: 500px;
-    border: 5px solid red;
+  float: right;
 }
 
     .restaurant {
@@ -378,22 +458,22 @@ div#map {
     // width:250px;
     // overflow:visible;
     // }
-    .main-menu {
-        background: #fbfbef;
-        border-right: 1px solid #898900;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        height: 100%;
-        left: 0; // width:60px;
-        // overflow:hidden;
-        -webkit-transition: width 0.05s linear;
-        transition: width 0.05s linear;
-        -webkit-transform: translateZ(0) scale(1,1);
-        z-index: 1000;
-        width: 220px;
-        overflow: visible;
-    }
+    // .main-menu {
+    //     background: #fbfbef;
+    //     border-right: 1px solid #898900;
+    //     position: absolute;
+    //     top: 0;
+    //     bottom: 0;
+    //     height: 100%;
+    //     left: 0; // width:60px;
+    //     // overflow:hidden;
+    //     -webkit-transition: width 0.05s linear;
+    //     transition: width 0.05s linear;
+    //     -webkit-transform: translateZ(0) scale(1,1);
+    //     z-index: 1000;
+    //     width: 220px;
+    //     overflow: visible;
+    // }
 
     .main-menu > ul {
         margin: 7px 0;
@@ -627,22 +707,22 @@ div#map {
     // width:250px;
     // overflow:visible;
     // }
-    .main-menu {
-        background: #fbfbef;
-        border-right: 1px solid #898900;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        height: 100%;
-        left: 0; // width:60px;
-        // overflow:hidden;
-        -webkit-transition: width 0.05s linear;
-        transition: width 0.05s linear;
-        -webkit-transform: translateZ(0) scale(1,1);
-        z-index: 1000;
-        width: 220px;
-        overflow: visible;
-    }
+    // .main-menu {
+    //     background: #fbfbef;
+    //     border-right: 1px solid #898900;
+    //     position: absolute;
+    //     top: 0;
+    //     bottom: 0;
+    //     height: 100%;
+    //     left: 0; // width:60px;
+    //     // overflow:hidden;
+    //     -webkit-transition: width 0.05s linear;
+    //     transition: width 0.05s linear;
+    //     -webkit-transform: translateZ(0) scale(1,1);
+    //     z-index: 1000;
+    //     width: 220px;
+    //     overflow: visible;
+    // }
 
     .main-menu > ul {
         margin: 7px 0;
@@ -761,7 +841,7 @@ div#map {
         border: 2px solid black;
     }
 }
-@media (min-width: 750px) {
+// @media (min-width: 750px) {
     .restaurant {
         text-align: center;
         float: none;
@@ -879,19 +959,19 @@ div#map {
     .main-menu {
         background: #fbfbef;
         border-right: 1px solid #898900;
-        position: absolute;
+    // //     position: absolute;
         top: 0;
         bottom: 0;
         height: 100%;
         left: 0; // width:60px;
-        // overflow:hidden;
+        overflow:hidden;
         -webkit-transition: width 0.05s linear;
         transition: width 0.05s linear;
         -webkit-transform: translateZ(0) scale(1,1);
         z-index: 1000;
         width: 220px;
-        overflow: visible;
-    }
+         overflow: visible;
+
 
     .main-menu > ul {
         margin: 7px 0;
