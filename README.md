@@ -23,3 +23,5 @@ Things you may want to cover:
 
 * ...
 # casa-publica
+bootstrap, devise, ruby, google map api,
+parallax scrolling.

@@ -11,12 +11,14 @@
 <div class="area"></div><nav class="main-menu">
            <ul>
                <li>
-                   <a href="#">
-                    <%=image_tag("sombrero.png",:class =>"sombrero")%>
-                       <span class="nav-text">
-                           <%= link_to "DINNER", '/dinner'%>
-                       </span>
-                   </a>
+                  <a href="#">
+                    <%=image_tag("sombrero.png",:class =>"sombrero") %>
+                      <span class="nav-text">
+                        <%= link_to "DINNER", '/dinner', :class =>"dinner" %>
+                      </span>
+                  </a>
+
+
 
                </li>
                <li class="has-subnav">
@@ -77,8 +79,6 @@
                </li>
 
            </ul>
-
-
        </nav>
   </head>
   <body>
