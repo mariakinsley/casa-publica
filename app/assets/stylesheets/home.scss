@@ -73,7 +73,6 @@
 }
 .parallax {
     background-image: url("imgages_lunc.jpg");
-    /* Set a specific height */
     min-height: 500px;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -88,6 +87,7 @@
  left: 0px;
  top: 0px;
  z-index: -1;
+ opacity: 0.9;
 
 }
 
@@ -114,7 +114,7 @@
     }
 
     .sombrero {
-        width: 40px;
+        width: 50px;
         height: 36px;
         display: inline-block;
     }
@@ -305,7 +305,7 @@
     .no-touch .dashboard-page nav.dashboard-menu ul li:hover a,
     nav.main-menu li.active > a {
         color: #342399;
-        background-color: #787652;
+        // background-color: #787652;
     }
 
     .area {
@@ -485,17 +485,23 @@
     .main-menu li {
         position: relative;
         display: block;
-        width: 250px;
+
+    }
+    .main-menu{
+      width: 250px;
     }
 
     .main-menu li > a {
+      padding-left: 30px;
+      padding-top: 2px;
         position: relative;
-        display: table;
+        display: block;
+        // display: table;
         border-collapse: collapse;
         border-spacing: 0;
-        color: #999;
+        color: #991166;
         font-family: arial;
-        font-size: 14px;
+        font-size: 15px;
         text-decoration: none;
         -webkit-transform: translateZ(0) scale(1,1);
         -webkit-transition: all 0.1s linear;
@@ -516,7 +522,7 @@
         position: relative;
         display: table-cell;
         vertical-align: middle;
-        width: 190px;
+        width: 250px;
         font-family: 'Titillium Web', sans-serif;
     }
 
@@ -565,12 +571,12 @@
     .no-touch .dashboard-page nav.dashboard-menu ul li:hover a,
     nav.main-menu li.active > a {
         color: #342399;
-        background-color: #787652;
+        background-color: #991166;
     }
 
     .area {
         float: left;
-        background: #e2e2e2;
+        background: #a3a4;
         width: 100%;
         height: 100%;
     }
