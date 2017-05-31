@@ -7,75 +7,75 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <div class="area"></div><nav class="main-menu">
-           <ul>
-               <li>
+           <ul class= "row adjust">
+               <li class="col-lg-2">
                   <a href="#">
+                     <div class="nav-button">
                     <%=image_tag("sombrero.png",:class =>"sombrero") %>
-
-                        <%= link_to "DINNER", '/dinner', :class =>"dinner" %>
-                      
+                      <%= link_to "DINNER", '/dinner', :class =>"dinner" %>
                   </a>
-
-
-
+                </div>
                </li>
-               <li class="has-subnav">
+
+
+               <li class="col-lg-2 has-subnav">
                    <a href="#">
+                      <div class="nav-button">
                       <%=image_tag("lunch.png",:class =>"lunch")%>
-                       <span class="nav-text">
+                       <!-- < span class="nav-text" > -->
                         <%= link_to "LUNCH", '/lunch'%>
-                       </span>
+                      </div>
+                       <!-- < /span > -->
                    </a>
 
                </li>
-               <li class="has-subnav">
+               <li class="col-lg-2 has-subnav">
                    <a href="#">
+                      <div class="nav-button">
                       <%=image_tag("brunch.png",:class =>"brunch")%>
-                       <span class="nav-text">
+                       <!-- < span class="nav-text" > -->
                             <%= link_to "BRUNCH", '/brunch'%>
-                       </span>
+                       <!-- < /span > -->
                    </a>
+                 </div>
 
                </li>
-               <li class="has-subnav">
-                   <a href="#">
+
+               <li class="col-lg-2 has-subnav">
+                   <div class="nav-button">
                       <%=image_tag("bottle.png",:class =>"bottle")%>
-                       <span class="nav-text">
-                           <%= link_to "DRINKS", '/drinks'%>
+                       <!-- < span class="nav-text" > -->
+                      <%= link_to "DRINKS",'/drinks'%>
 
-                       </span>
-                   </a>
+                       <!-- < /span > -->
+                   </div>
 
                </li>
-               <li>
-                  <li class="has-subnav">
-                   <a href="#">
-                      <%=image_tag("reservations.png",:class =>"reservations")%>
-                       <span class="nav-text">
-                         <%= link_to "RESERVATIONS", '/reservations'%>
 
-                       </span>
-                   </a>
-               </li>
-               <li>
+               <li class="col-lg-2">
+                  <div class="nav-button">
                    <a href="#">
                        <%=image_tag("contact.png",:class =>"contact")%>
-                       <span class="nav-text">
+                       <!-- < span class="nav-text" > -->
                          <%= link_to "CONTACT", '/contact'%>
 
-                       </span>
+                       <!-- < /span > -->
                    </a>
+                 </div>
                </li>
 
-               <li>
+               <li class="col-lg-2">
                   <a href="#">
+                     <div class="nav-button">
                       <%=image_tag("map.png",:class =>"map")%>
-                       <span class="nav-text">
+                       <!-- < span class="nav-text" > -->
                         <%= link_to "MAP", '/map'%>
-                       </span>
+                       <!-- < /span > -->
                    </a>
+                 </div>
                </li>
 
            </ul>
